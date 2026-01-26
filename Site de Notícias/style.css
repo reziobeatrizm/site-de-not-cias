@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#botão-saiba-mais-como-configurar {
+    background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+}
+
+footer {
+    background-color: #000000;
+}
+
+
+
