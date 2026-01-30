@@ -11,7 +11,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.icones-header {
+  display: flex;
+  gap: 30px;
 }
 
 header div:first-child img {
@@ -46,51 +52,52 @@ h2 {
   font-weight: bold;
 }
 
-/* Card destaque */
-main > section > article:first-child {
+/* Card notícia principal */
+main>section>article:first-child {
   background-color: #000;
   color: white;
   padding: 60px;
   border-radius: 20px;
   max-width: 2000px;
-  
+
 }
 
-main > section > article:first-child h2 {
+
+main>section>article:first-child h2 {
   font-size: 50px;
   margin-bottom: 20px;
 }
 
-main > section > article:first-child li {
+main>section>article:first-child li {
   margin-bottom: 10px;
 }
 
 /* ===== GRID DOS CARDS ===== */
 main section div,
-main > div {
+main>div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 40px;
 }
 
-/* ===== CARDS ===== */
+/* ===== TODOS OS CARDS ===== */
 article {
-  background-color: hsl(0, 12%, 93%);
+  background-color: hsl(0, 0%, 81%);
   padding: 16px;
   border-radius: 12px;
-
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* IMAGENS PADRONIZADAS */
+/* IMAGENS PADRONIZADAS - TAMANHO DE TODAS */
 article img {
   width: 100%;
-  height: 180px;          
-  object-fit: cover;    
+  height: 180px; /* altura */
+  object-fit: cover; /* corta sem distorcer */
   border-radius: 10px;
+  
 }
 
 /* TÍTULOS */
@@ -98,9 +105,10 @@ article h3,
 article h4 {
   margin: 12px 0;
   font-size: 16px;
+  
 }
 
-/* LISTAS */
+/* LISTAS ALINHAMENTO */
 article ul {
   padding-left: 18px;
 }
@@ -120,6 +128,8 @@ button {
 .cards-lado-a-lado {
   margin-left: 900px;
   margin-top: -1155px;
+  border-right: 1px solid black; /* ===== LINHA PRETA ===== */
+   padding: 0px 0px;
 }
 
 .cards-lado-a-lado section {
@@ -128,7 +138,7 @@ button {
 }
 
 .cards-lado-a-lado article {
-   flex: 0 0 340px;  
+  flex: 0 0 340px;
 }
 
 .cards-lado-a-lado img {
@@ -138,6 +148,7 @@ button {
   border-radius: 12px;
 }
 
+
 #botão-saiba-mais-como-configurar {
   background-color: #000000;
   color: #ffffff;
@@ -146,9 +157,10 @@ button {
   border-radius: 5px;
 }
 
-.cards-lado-a-lado-2{
-   margin-left: 900px;
+.cards-lado-a-lado-2 {
+  margin-left: 900px;
   width: calc(340px * 2 + 24px);
+  display: flex;
 }
 
 /* ===== FOOTER ===== */
@@ -159,6 +171,3 @@ footer {
   color: white;
   margin-top: 800px;
 }
-
-
-
